@@ -1,5 +1,7 @@
 # Batcher
 
+![coverage](https://raw.githubusercontent.com/silviolleite/batcher/badges/.badges/main/coverage.svg)
+
 ---
 
 This package provides a worker pool to batch items. Create a Batcher, start it with a handler function and add items to it. Items are accumulated by BatchSize or Timeout, when on of these threshold was satisfied the handler function is called with items accumulated. You can repeat this processes for many times.
