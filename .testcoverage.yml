@@ -1,0 +1,23 @@
+profile: cover.out
+local-prefix: "github.com/silviolleite/batcher"
+git-token: ${{ github.ref_name == 'main' && secrets.GITHUB_TOKEN || '' }}
+git-branch: badges
+
+# Holds coverage thresholds percentages, values should be in range [0-100]
+threshold:
+  # (optional; default 0)
+  # The minimum coverage that each file should have
+  file: 70
+
+  # (optional; default 0)
+  # The minimum coverage that each package should have
+  package: 80
+
+  # (optional; default 0)
+  # The minimum total coverage project should have
+  total: 90
+
+exclude:
+  # Exclude files or packages matching their paths
+  paths:
+    - ^example
