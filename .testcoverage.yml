@@ -1,7 +1,5 @@
 profile: cover.out
 local-prefix: github.com/silviolleite/batcher
-git-token: ${{ github.ref_name == 'main' && secrets.GITHUB_TOKEN || '' }}
-git-branch: badges
 
 # Holds coverage thresholds percentages, values should be in range [0-100]
 threshold:

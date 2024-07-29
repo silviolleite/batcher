@@ -3,6 +3,7 @@ package batcher
 const (
 	// ErrInputChannelClosed should be returned when the batch channel is closed
 	ErrInputChannelClosed = Error("batch channel is closed")
+
 	// ErrInputIsNil should be returned when the input data is nil
 	ErrInputIsNil = Error("input is nil")
 )
