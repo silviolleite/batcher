@@ -133,7 +133,7 @@ linters:
     - dogsled
     - dupl
     - errcheck
-    - exportloopref
+    - copyloopvar
     - exhaustive
     - funlen
     - gochecknoinits
@@ -203,7 +203,7 @@ issues:
     - example
 
 run:
-  go: "1.22"
+  go: "1.23"
   # timeout for analysis, e.g. 30s, 5m, default is 1m
   timeout: 5m
   tests: false
